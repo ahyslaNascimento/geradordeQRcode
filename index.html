@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Gerando QR Code</title>
+    </head>
+    <body>
+        <div class="container">
+            <label for="inputText">Digite o valor:</label>
+            <input type="text" id="inputText" placeholder="Insira o valor">
+            <button onclick="gerarQRCode()">Gerar QR Code</button>
+            <img id="qrCodeImage" src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=" alt="QR Code">
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+    </html>
